@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export STACK_NAME=my-bucket-stack-ga
-export STACK_TEMPLATE_FILE=amazon-eks-vpc-private-subnets.yaml
+export STACK_TEMPLATE_FILE=s3-bucket-cft.yaml
 
 output=$(aws cloudformation describe-stacks --stack-name ${STACK_NAME} 2>&1)
 
